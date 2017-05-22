@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mysupp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+</head>
+<body>
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+        <div class="container">
+            <div class="main-header">
+                <div class="logo-block">
+                    <h1 class="logo">
+                        <a href="/"><img src="img/logo.png" alt="MySuppliers"/></a>
+                    </h1>
+                    <div class="about"><p class="red-word">Сертификация</p>
+                    Специалистов сто</div>
+                </div>
+                <div class="menu">
+                    <ul class="nav">    
+                        <li><a href="#">Новичкам</a></li>
+                        <li><a href="#">Правила</a></li>
+                    </ul>
+                    <button class="menu-button" type="button">
+                        <img src="img/menu.png" alt="menu"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main class="wrapper">
+        <div class="testBlock">
+            <div class="testBlock_top">
+                <div class="container clearfix">
+                    <div class="about-test">
+                        <p class="test-text">Здесь вы можете проверить свои знания и получить от Майсапп именной электронный сертификат, 
+                        который подтвердит ваш профессионализм в работе. </p>
+                        <div class="test-num">
+                            <p><span>30</span>вопросов</p>
+                            <p><span>3</span>минуты</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testBlock_bottom">
+                <div class="container">
+                    <form id="test-form" class="test-form">
+                        <div class="form-group">
+                            <select id="select" class="form-control" data-placeholder="Выбрать спциализацию">
+                                <option></option>
+                                <option value="1">Менеджер по продажам</option>
+                                <option value="2">Автомеханик</option>
+                                <option value="3">Менеджер по подбору запчастей</option>
+                                <option value="4">Руководитель СТО</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="sertif" name="sertif" class="checkbox-input" checked="">
+                            <label for="sertif" class="checkbox-label">Прислать сертификат на электронную почту</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="mail" name="mail" class="input" placeholder="Укажите e-mail">
+                            <label for="mail""></label>
+                        </div>
+                        <div class="test-btn">
+                            <input type="submit" id="submit" class="submit" />
+                            <label for="submit"></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="regulations">
+                <h2>Правила тестирования</h2>
+                <div class="regulationsItem clearfix">
+                    <div class="regulationsItem__left">
+                        <p class="title">Тестирование рассчитано на специалистов, оно содержит теоретические вопросы и практические задания, для решения которых вам пригодится опыт работы в СТО.</p>
+                        <p>1. На вопросы может быть как один, так и несколько правильных ответов: во втором случае форма выбора ответа меняется на квадратики.</p>
+                        <p>2. Время прохождения теста не ограничено.</p>
+                        <p>3. Если вы не преодолели минимальный порог верных ответов по какой-то из тем, попытка считается неудачной. В конце теста будет показан результат по каждой теме. Вы не можете приостановить прохождение теста и сохранить промежуточные результаты. Если вы не успели ответить на вопрос до окончания теста, ответ на него будет считаться неверным.</p>
+                    </div>
+                    <div class="regulationsItem__right">
+                        <p>4. Сертификат выдается на имя, указанное для вашего логина в системе проценки Майсапп. Пожалуйста, проверьте, корректны ли персональные данные, до прохождения теста.</p>
+                        <p>5. Если вам не удастся сдать тест с первого раза, вы сможете попробовать пересдать его через неделю. Следующие попытки будут предоставляться с интервалом в три месяца каждая. Обратите внимание, что мы не обнуляем на ваших логинах неудачные попытки пройти тестирование в прошлом.</p>
+                        <p>6. Тестирование выполняется с использованием форм Google Docs, но прямое обращение к ним по фиксированным ссылкам не засчитывается. Начало теста должно быть именно с этой страницы.</p>
+                    </div>
+                </div>
+                <a href="#" class="more">Тяни, если тебе интересно</a>
+            </div>
+            <div class="specialistList">
+                <div class="specialistList__text">
+                    <h2>Для чего это специалисту</h2>
+                    <ul>
+                        <li>При наличии сертификата на свои компетенции вам гораздо проще будет найти работу как сертифицированному специалисту, а также стоимость ваших услуг может быть значительно выше среди прочих специалистов без сертификата.</li>
+                        <li>Вы смело можете претендовать на статус эксперта в своей области, если до того как получили сертификат считались рядовым специалистом.</li> 
+                        <li>Тест поможет Вам объективно оценить свои знания, структурировать их или обновить. В случае недобора баллов Вы всегда можете пересдать тест.</li>
+                    </ul>
+                    <a href="#" class="btn">Начать тестирование</a>
+                </div>
+            </div>
+        </div>
+        <div class="companyList clearfix">
+            <div class="companyList__pic">
+                <img src="img/company.jpg" alt=""/>
+            </div>
+            <div class="companyList__text">
+                <h2>Для чего это компании</h2>
+                <ul>
+                    <li>Тестирование сотрудников позволяет всегда держать руку на пульсе компетенций вашего персонала, будь то менеджер, слесарь или руководитель подразделения.</li>
+                    <li>С помощью тестирования вы периодически можете повышать квалификацию Ваших сотрудников. Высококвалифицированный персонал поднимет индекс доверия клиентов к вашей компании.</li> 
+                    <li>Уровень ценообразования на рынке услуг компании, коллективом которой являются эксперты всегда выше прочих, где работают рядовые сотрудники без соотсетвиующей сертификации.</li>
+                </ul>
+                <a href="#" class="btn">Начать тестирование</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="kinds">
+                <div class="kinds-title">
+                    <span>Сейчас вы можете</span>
+                    <p class="big-title">пройти тестирование по специальностям:</p>
+                    <span>нажмите на силуэт для подробностей</span>
+                </div>
+                <div class="kinds-block">
+                    <div class="kindsItem kindsItem1">
+                        <div class="kindsItem__silhouette">
+                            <img src="img/man1.png" alt=""/>
+                            <p>Менеджер по продажам</p>
+                        </div>
+                        <div class="test-num">
+                            <p><span>30</span>Вопросов</p>
+                            <p><span>3</span>Минуты</p>
+                        </div>
+                        <a href="#" class="btn">Получить сертификат</a>
+                        <div class="about-kinds">
+                            <p>Менеджер по проценке владеет полной картиной мира по ценам автозапчастей в регионе. Обладая компетенциями эксперта в этой сфере менеджеры втрое быстрее находят нужные запчасти, а значит могут обслужить комфортно больше клиентов</p>
+                        </div>
+                    </div>
+                    <div class="kindsItem kindsItem2">
+                        <div class="kindsItem__silhouette">
+                            <img src="img/man2.png" alt=""/>
+                            <p>Автомеханик</p>
+                        </div>
+                        <div class="test-num">
+                            <p><span>34</span>Вопросов</p>
+                            <p><span>3</span>Минуты</p>
+                        </div>
+                        <a href="#" class="btn">Получить сертификат</a>
+                        <div class="about-kinds">
+                            <p>Менеджер по проценке владеет полной картиной мира по ценам автозапчастей в регионе. Обладая компетенциями эксперта в этой сфере менеджеры втрое быстрее находят нужные запчасти, а значит могут обслужить комфортно больше клиентов</p>
+                        </div>
+                    </div>
+                    <div class="kindsItem kindsItem3">
+                        <div class="kindsItem__silhouette">
+                            <img src="img/man3.png" alt=""/>
+                            <p>Менеджер по подбору запчастей</p>
+                        </div>
+                        <div class="test-num">
+                            <p><span>26</span>Вопросов</p>
+                            <p><span>3</span>Минуты</p>
+                        </div>
+                        <a href="#" class="btn">Получить сертификат</a>
+                        <div class="about-kinds">
+                            <p>Менеджер по проценке владеет полной картиной мира по ценам автозапчастей в регионе. Обладая компетенциями эксперта в этой сфере менеджеры втрое быстрее находят нужные запчасти, а значит могут обслужить комфортно больше клиентов</p>
+                        </div>
+                    </div>
+                    <div class="kindsItem kindsItem4">
+                        <div class="kindsItem__silhouette">
+                            <img src="img/man4.png" alt=""/>
+                            <p>Руководитель СТО</p>
+                        </div>
+                        <div class="test-num">
+                            <p><span>48</span>Вопросов</p>
+                            <p><span>5</span>Минуты</p>
+                        </div>
+                        <a href="#" class="btn">Получить сертификат</a>
+                        <div class="about-kinds">
+                            <p>Менеджер по проценке владеет полной картиной мира по ценам автозапчастей в регионе. Обладая компетенциями эксперта в этой сфере менеджеры втрое быстрее находят нужные запчасти, а значит могут обслужить комфортно больше клиентов</p>
+                        </div>
+                    </div>
+                </div>
+
+            <p class="big-title"><span>Знание — сила, а подтвержденное знание —</span>
+                высокооплачиваемое преимущество!</p>
+            </div>
+        </div>
+        <div class="slider-block">
+            <p class="big-title">С этим уже согласились:</p>
+            <div class="container">
+                <div class="slider">
+                    <div class="slide-item">
+                        <img src="img/partner1.png" alt="" />
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/partner2.png" alt="" />
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/partner3.png" alt="" />
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/partner4.png" alt="" />
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/partner5.png" alt="" />
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/partner6.png" alt="" />
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/partner7.png" alt="" />
+                    </div>
+                    <div class="slide-item">
+                        <img src="img/partner8.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="footer-top container">  
+            <a href="#" class="btn">Начать тестирование</a>
+            <div class="social">
+                <p>Понравился сервис? Поделись с друзьями:</p>
+                <a href="#"><img src="img/t-01.svg" alt=""/></a>
+                <a href="#"><img src="img/G-01.svg" alt=""/></a>
+                <a href="#"><img src="img/I-01.svg" alt=""/></a>
+                <a href="#"><img src="img/F-01.svg" alt=""/></a>
+                <a href="#"><img src="img/Vk-01.svg" alt=""/></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <a class="footer-logo" href="#"><img src="img/footer-logo.png" alt=""/></a>
+                <p class="copyright">© 2017 Все права защищены</p>
+            </div>
+        </div>
+           
+            <!-- {%FOOTER_LINK} -->
+    </footer>
+
+<script src='js/jq.min.js'></script>
+<script src="js/jquery-migrate-3.0.0.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/slick.min.js"></script>
+
+
+</body>
+</html>
